@@ -51,7 +51,8 @@ private fun sortCards(){
             in '2'..'9' -> it.first().toString().toInt()
             'B' -> 11
             'D' -> 12
-            else -> 13
+            'K' -> 13
+            else -> 10
         }
     }
 }
