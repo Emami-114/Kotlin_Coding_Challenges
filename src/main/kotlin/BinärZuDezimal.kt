@@ -38,6 +38,13 @@ fun main() {
 
     //hier kann getestet werden
     println(convertToBinary(41))
+    println(convertToBinary(13))
+    println("----- convert with toString")
+    println(convertToBinaryWithToString(41))
+    println(convertToBinaryWithToString(13))
+    println("------ convert with toBinaryString")
+    println(convertToBinaryWithToBinary(41))
+    println(convertToBinaryWithToBinary(13))
 
 }
 
@@ -50,4 +57,13 @@ fun convertToBinary(dezimalzahl: Int): String {
         zahl /= 2
     }
     return binarzahl
+
+}
+
+fun convertToBinaryWithToString(dezimalzahl: Int): String {
+    return dezimalzahl.toString(2)
+
+}fun convertToBinaryWithToBinary(dezimalzahl: Int): String {
+    return Integer.toBinaryString(dezimalzahl)
+
 }
